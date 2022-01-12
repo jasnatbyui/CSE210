@@ -49,7 +49,9 @@ def has_winner(board):
             board[2] == board[8] == board[14] == board[20] == board[26] == board[32] or
             board[3] == board[9] == board[15] == board[21] == board[27] == board[33] or
             board[4] == board[10] == board[16] == board[22] == board[28] == board[43] or
-            board[5] == board[11] == board[17] == board[23] == board[29] == board[35])
+            board[5] == board[11] == board[17] == board[23] == board[29] == board[35] or
+            board[1] == board[8] == board[15] == board[22] == board[29] == board[36] or
+            board[6] == board[11] == board[16] == board[21] == board[26] == board[31])
 
 def make_move(player, board):
     square = int(input(f"{player}'s turn to choose a square (1-36): "))
