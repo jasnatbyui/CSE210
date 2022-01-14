@@ -1,4 +1,6 @@
 
+#Comment:  W02 Prove: Developer - Solo Code Submission
+# Author CSE210, Jason McLaughlin
 def main():
     player = next_player("")
     board = create_board()
