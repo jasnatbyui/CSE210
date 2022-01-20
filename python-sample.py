@@ -2,7 +2,7 @@
 # that the sleep function can be used in this program.
 from time import sleep
 
-# Prompt the user to enter her name.
+# Prompt the user to enter his or her name.
 name = input("Hello! What is your name? ")
 
 # Print the numbers 3, 2, 1.
