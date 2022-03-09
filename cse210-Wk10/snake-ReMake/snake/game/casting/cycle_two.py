@@ -3,11 +3,11 @@ from game.casting.actor import Actor
 from game.shared.point import Point
 
 
-class Snake(Actor):
+class CycleTwo(Actor):
     """
     A long limbless reptile.
     
-    The responsibility of Snake is to move itself.
+    The responsibility of CycleTwo is to move itself (player two).
 
     Attributes:
         _points (int): The number of points the food is worth.

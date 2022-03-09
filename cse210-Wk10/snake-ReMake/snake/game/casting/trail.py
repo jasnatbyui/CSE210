@@ -6,9 +6,9 @@ from game.shared.point import Point
 
 class Trail(Actor):
     """
-    A tasty item that snakes like to eat.
+    A trail item that snakes leave behind.
     
-    The responsibility of Trail is to add to trail length by  position and points that it's worth.
+    The responsibility of Trail is to add to trail length by position and points that it's worth.
 
     Attributes:
         _points (int): The number of points the trail is worth.
@@ -22,13 +22,13 @@ class Trail(Actor):
         self.reset()
         
     def reset(self):
-        """Selects a random position and points that the food is worth."""
+        """Selects a random position and points that the trail left behind is worth."""
         self._points = 5
-        x = random.randint(1, constants.COLUMNS - 1)
-        y = random.randint(1, constants.ROWS - 1)
-        position = Point(x, y)
-        position = position.scale(constants.CELL_SIZE)
-        self.set_position(position)
+        # x = random.randint(1, constants.COLUMNS - 1)
+        # y = random.randint(1, constants.ROWS - 1)
+        # position = Point(x, y)
+        # position = position.scale(constants.CELL_SIZE)
+        # self.set_position(position)
         
     def get_points(self):
         """Gets the points the trail is worth.
