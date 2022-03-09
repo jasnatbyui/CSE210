@@ -38,12 +38,12 @@ class HandleCollisionsAction(Action):
         """
         score = cast.get_first_actor("scores")
         trail = cast.get_first_actor("trails")
-        snake = cast.get_first_actor("snakes")
-        head = snake.get_head()
+        snake1 = cast.get_first_actor("snakes1")
+        head = snake1.get_head()
 
         if head.get_position().equals(trail.get_position()):
             points = trail.get_points()
-            snake.grow_tail(points)
+            snake1.grow_tail(points)
             score.add_points(points)
             trail.reset()
     
@@ -53,7 +53,7 @@ class HandleCollisionsAction(Action):
         Args:
             cast (Cast): The cast of Actors in the game.
         """
-        snake = cast.get_first_actor("snakes")
+        snake = cast.get_first_actor("snakes1")
         head = snake.get_segments()[0]
         segments = snake.get_segments()[1:]
         
@@ -68,7 +68,7 @@ class HandleCollisionsAction(Action):
             cast (Cast): The cast of Actors in the game.
         """
         if self._is_game_over:
-            snake = cast.get_first_actor("snakes")
+            snake = cast.get_first_actor("snakes1")
             segments = snake.get_segments()
             trail = cast.get_first_actor("trails")
 

@@ -3,7 +3,7 @@ from game.scripting.action import Action
 from game.shared.point import Point
 
 
-class ControlActorsAction(Action):
+class ControlActorsAction2(Action):
     """
     An input action that controls the snake.
     
@@ -45,5 +45,5 @@ class ControlActorsAction(Action):
         if self._keyboard_service.is_key_down('s'):
             self._direction = Point(0, constants.CELL_SIZE)
         
-        snake = cast.get_first_actor("snakes")
+        snake = cast.get_first_actor("snakes2")
         snake.turn_head(self._direction)

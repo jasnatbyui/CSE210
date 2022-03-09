@@ -1,7 +1,7 @@
 from game.casting.actor import Actor
 
 
-class Score(Actor):
+class Score1(Actor):
     """
     A record of points made or lost. 
     
@@ -25,3 +25,9 @@ class Score(Actor):
         """
         self._points += points
         self.set_text(f"Score: {self._points}")
+    # banner = Actor()
+    # banner.set_text("")
+    # banner.set_font_size(FONT_SIZE)
+    # banner.set_color(WHITE)
+    # banner.set_position(Point(CELL_SIZE, 0))
+    # cast.add_actor("banners", banner)
