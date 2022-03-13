@@ -39,6 +39,7 @@ class DrawActorsAction(Action):
         self._video_service.draw_actors(segments)
         self._video_service.draw_actor(score1)
         self._video_service.draw_actor(score2)
+        self._video_service.draw_actor(snake1)
         self._video_service.draw_actor(snake2)
         self._video_service.draw_actors(messages, True)
         self._video_service.flush_buffer()
